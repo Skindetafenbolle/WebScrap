@@ -32,7 +32,7 @@ export function bukkaConfig(): ResourceConfig {
             subServiceName: '[itemprop="name"]'
         },
         categories: {
-            [Category.HAIR]: 'fryzjer',
+            // [Category.HAIR]: 'fryzjer',
             [Category.BARBER]: 'barber',
             [Category.NAIL]: 'paznokcie',
             [Category.BROWS]: 'kosmetyczka',

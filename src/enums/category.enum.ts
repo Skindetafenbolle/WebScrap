@@ -1,5 +1,5 @@
 export enum Category {
-    HAIR = 'HAIR',
+    // HAIR = 'HAIR',
     BARBER = 'BARBER',
     NAIL = 'NAIL',
     BROWS ='BROWS',

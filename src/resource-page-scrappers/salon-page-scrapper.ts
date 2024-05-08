@@ -7,6 +7,7 @@ import { WorkHours } from "../types/salon/work-hours";
 import { trimObjectFields } from "../utils/trim-object-fields";
 import { Salon } from "../types/salon/salon";
 import { Service } from "../types/salon/service";
+import {Category} from "../enums/category.enum";
 
 export abstract class SalonPageScrapper {
     protected page: Page;
@@ -26,7 +27,7 @@ export abstract class SalonPageScrapper {
         }
     }
 
-    async getSalon(): Promise<Salon> {
+    async getSalon(category: Category): Promise<Salon> {
         return trimObjectFields({
             name: await this.getSalonName(),
             email: '',
@@ -39,6 +40,8 @@ export abstract class SalonPageScrapper {
             specialTags: await this.getSalonSpecialTags(),
             schedule: await this.getSalonSchedule(),
             services: await this.getSalonServices(),
+            subscription: 'None',
+            subcategories: [category],
         } as Salon);
     }
 

@@ -34,7 +34,7 @@ export function freshaConfig(): ResourceConfig {
             subServiceName: '',
         },
         categories: {
-            [Category.HAIR]: '5',
+            // [Category.HAIR]: '5',
             [Category.BARBER]: '14',
             [Category.NAIL]: '1',
             [Category.BROWS]: '13',

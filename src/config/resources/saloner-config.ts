@@ -33,7 +33,7 @@ export function salonerConfig(): ResourceConfig {
             subServiceName: '[class="text-sm text-gray-600"]',
         },
         categories: {
-            [Category.HAIR]: 'fryzjer',
+            // [Category.HAIR]: 'fryzjer',
             [Category.BARBER]: 'barber',
             [Category.NAIL]: 'paznokcie',
             [Category.BROWS]: 'medycyna-estetyczna',

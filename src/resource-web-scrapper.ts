@@ -102,7 +102,7 @@ export class ResourceWebScrapper {
                     const salonPage = await this.getSalonPage(salonLinks[i]);
                     salonScrapper.setPage(salonPage);
                     //@ts-ignore
-                    salons.push(await salonScrapper.getSalon());
+                    salons.push(await salonScrapper.getSalon(category));
                     await salonPage.close();
 
                     //save salons

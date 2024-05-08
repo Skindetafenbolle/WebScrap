@@ -9,7 +9,7 @@ configDotenv()
 async function main() {
     const outputDir = path.join(process.cwd(), 'out');
     const resource = Resource.BOOKSY;
-    const category = Category.HAIR;
+    // const category = Category.HAIR;
     
     const scrapper = new ResourceWebScrapper({
         resource: resource,
@@ -23,8 +23,8 @@ async function main() {
         }
     })
     
-    await scrapper.getSalonsByCategory(category);
-    // await scrapper.getAllSalons();
+    // await scrapper.getSalonsByCategory(category);
+    await scrapper.getAllSalons();
 }
 
 main();

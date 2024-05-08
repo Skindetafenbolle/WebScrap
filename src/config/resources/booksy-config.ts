@@ -37,7 +37,7 @@ export function booksyConfig(): ResourceConfig {
             subServiceName: '[class="purify_0bFL6XKK9yGgpVpvdBOg9g== purify_Sardy6hfiet162IZ2pYFPA== purify_f9tJlQGTtqZe8Hg0f7oQhg=="]',
         },
         categories: {
-            [Category.HAIR]: 'fryzjer',
+            // [Category.HAIR]: 'fryzjer',
             [Category.BARBER]: 'barber-shop',
             [Category.NAIL]: 'paznokcie',
             [Category.BROWS]: 'brwi-i-rzesy',
